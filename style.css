@@ -1,0 +1,43 @@
+
+@media (max-width: 300px){
+    header{
+        color: antiquewhite;
+    }
+}
+
+.main-body{
+    display: grid;
+    grid-template-columns: minmax(300px, auto), 1fr;
+    grid-template-areas: "navbar mainContent";
+    grid-column-gap: 30px;
+}
+
+nav#navbar{
+    grid: navbar;
+    
+}
+
+nav#navbar a{
+    display: block;
+    text-decoration: none;
+    display: block;
+}
+.lila{
+    list-style: none;
+    line-height: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+main#main-doc{
+    grid-area: mainContent;
+}
+
+#main-header{
+    font-size: 30px;
+}
+
+.topic-header{
+    font-size: 20px;
+
+}
